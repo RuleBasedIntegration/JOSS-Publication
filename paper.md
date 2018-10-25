@@ -29,29 +29,29 @@ bibliography: paper.bib
 
 # Summary
 
-Finding the antiderivative of expressions is challenging and requires advanced mathematical skills
-and knowledge even for unsuspicious looking problems. Nowadays, computer algebra systems (CAS)
-like Mathematica (Wolfram Research, Inc., Champaign, IL), Maple (Maplesoft, a division of Waterloo Maple Inc., Waterloo, Ontario), Maxima (maxima.sourceforge.net), and others, provide algorithms
-to compute antiderivatives symbolically.
-However, often it is impossible to gain insight into how a solution was found or why an antiderivative could not be computed.
+Finding the antiderivative of expressions is often challenging and requires advanced mathematical skills
+even for some simple looking problems.
+Computer algebra systems (CAS) like Mathematica (Wolfram Research, Inc., Champaign, IL), Maple (Maplesoft, a division of Waterloo Maple Inc., Waterloo, Ontario), and Maxima (maxima.sourceforge.net) provide integators to compute antiderivatives symbolically.
+However, these integrators provide no insight as to how an antiderivative is found or why it could not be computed.
+Also they use advanced methods that are incomprehensible to humans, and often result in huge antiderivatives involving special functions unnecessarily.
 
-In this work, we present Rubi, an extensive system of symbolic integration rules that can be
+In this work, we present Rubi, based on an extensive system of symbolic integration rules that can be
 systematically applied to determine the antiderivative of a wide variety of mathematical expressions.
-Rubi contains currently over 6600 integration rules derived from known
-integration tables [@Burington; @Zwillinger; @Abramowitz; @Gradshteyn]
-and incorporated into Mathematica's powerful pattern-matching language. The key to the success of Rubi
-is the rigorous definition of conditions for the integration steps that determine under which circumstances
-the application of a specific rule is correct and meaningful.
+Rubi contains currently over 6600 integration rules and written in Mathematica's pattern-matching language.
+Some of these rules are based on the integration *formulas* from [@Burington; @Zwillinger; @Abramowitz; @Gradshteyn] then transformed into *rules* that include precise instructions as to when a formula should be applied.
+Also during Rubi's development, numerous new, previously unknown, integration formulas had to be derived to handle cases not addressed in published tables. 
+
+The key to the success of Rubi is the rigorous definition of conditions for the integration steps that determine under which circumstances the application of a specific rule is correct and meaningful.
 Therefore, Rubi produces optimal antiderivatives often dramatically simpler than provided by the commercial CAS integrators.
 
 Rubi is implemented as a Mathematica package that gives the user the possibility to inspect integration
 steps and conditions in detail. 
-An extensive test suite of over 70.000 integrals with known, optimal antiderivatives is employed to
+An extensive test suite of over 70,000 integrals with known, optimal antiderivatives is employed to
 verify its correctness. To compare the results of Rubi with other integrators, the test suite is
 available for Axiom, Maple, Mathematica, and Maxima.
 
 However, the value of Rubi goes far beyond its Mathematica implementation. All integration rules are
-available in human readable form as PDF file or Mathematica notebook which contain additional details
+available in human readable form as PDF files or Mathematica notebooks which contain additional details
 and references to the relevant literature. Since Rubi's rules in general only require a system for
 manipulating symbolic expressions by applying pattern-based rules, it is feasible to implement the
 integration rules in other systems. Therefore, Rubi is the integration engine behind Symja ,
