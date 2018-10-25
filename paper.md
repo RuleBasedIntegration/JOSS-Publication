@@ -33,16 +33,16 @@ Finding the antiderivative of expressions is often challenging and requires adva
 even for some simple looking problems.
 Computer algebra systems (CAS) like Mathematica (Wolfram Research, Inc., Champaign, IL), Maple (Maplesoft, a division of Waterloo Maple Inc., Waterloo, Ontario), and Maxima (maxima.sourceforge.net) provide integators to compute antiderivatives symbolically.
 However, these integrators provide no insight as to how an antiderivative is found or why it could not be computed.
-Also they use advanced methods that are incomprehensible to humans, and often result in huge antiderivatives involving special functions unnecessarily.
+Also they use advanced methods incomprehensible to humans and often result in huge antiderivatives unnecessarily involving special, or even hypergeometric, functions.
 
 In this work, we present Rubi, based on an extensive system of symbolic integration rules that can be
 systematically applied to determine the antiderivative of a wide variety of mathematical expressions.
-Rubi contains currently over 6600 integration rules and written in Mathematica's pattern-matching language.
-Some of these rules are based on the integration *formulas* from [@Burington; @Zwillinger; @Abramowitz; @Gradshteyn] then transformed into *rules* that include precise instructions as to when a formula should be applied.
-Also during Rubi's development, numerous new, previously unknown, integration formulas had to be derived to handle cases not addressed in published tables. 
+Rubi currently has over 6600 integration rules that are implemented in Mathematica's pattern-matching language.
+Some of these rules are based on integration *formulas* from [@Burington; @Zwillinger; @Abramowitz; @Gradshteyn] then transformed into *rules* that include precise instructions as to when a formula should be applied.
+Numerous other previously unknown rules were derived during Rubi's development in order to integrate expressions not addressed by formulas in published tables. 
 
-The key to the success of Rubi is the rigorous definition of conditions for the integration steps that determine under which circumstances the application of a specific rule is correct and meaningful.
-Therefore, Rubi produces optimal antiderivatives often dramatically simpler than provided by the commercial CAS integrators.
+The key to the success of Rubi is the rigorous definition of conditions for the integration steps that determine under which circumstances the application of a specific rule is correct and useful.
+Therefore, Rubi produces optimal antiderivatives that are often dramatically simpler than provided by the commercial CAS integrators.
 
 Rubi is implemented as a Mathematica package that gives the user the possibility to inspect integration
 steps and conditions in detail. 
