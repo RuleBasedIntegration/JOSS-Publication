@@ -13,11 +13,16 @@ authors:
   - name: Patrick Scheibe
     orcid: 0000-0003-0361-9063
     affiliation: 2
+  - name: Nasser M Abbasi
+    orcid: ?????????????
+    affiliation: 3
 affiliations:
  - name: Unaffiliated, co-author of the Derive computer algebra system
    index: 1
  - name: Leipzig University, Saxonian Incubator for Clinical Translation, Philipp-Rosenthal-Straße 55, 04103 Leipzig
    index: 2
+ - name: ????????????????
+   index: 3
 date: 30 October 2018
 bibliography: paper.bib
 ---
@@ -55,6 +60,18 @@ a free and open-source CAS.
 
 
 # Short Example
+
+![Figure 1](figure1.png)
+
+Figure 1 shows the computation of
+
+$$\int \frac{\sec(x)^2+sec(x)^2\cdot\tan(x)}{(2-\tan(x))\cdot\sqrt{1+\tan(x)^3}} dx$$
+
+using Rubi with all integration steps displayed.
+The specific rule that is applied is shown in red and it is possible to open the rule display to inspect the exact conditions that need to hold to make the transformation valid.
+In blue, the intermediate expressions are visible and at the end the final antiderivative is returned.
+It should be noted that the size of the found antiderivative is 25, counting the leafs of the expression tree.
+In comparison, Mathematica 11.3 returns an antiderivative that has a leaf count of 290 and contains complex terms.
 
 
 # Mathematics
