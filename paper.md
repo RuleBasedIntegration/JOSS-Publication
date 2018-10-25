@@ -36,7 +36,7 @@ However, these systems provide no insight as to how an antiderivative is found o
 Also they use advanced methods incomprehensible to humans and often result in huge antiderivatives unnecessarily involving special, or even hypergeometric, functions.
 
 In this work, we present Rubi, a rule-based integrator.
-Rubi systematically applies an extensive system of symbolic integration rules able to produce the optimal antiderivative of a wide variety of mathematical expressions.
+Rubi systematically applies an extensive system of symbolic integration rules able to find the optimal antiderivative of a wide variety of mathematical expressions.
 It currently has over 6600 rules implemented in Mathematica's pattern-matching language.
 Some of these rules are based on integration *formulas* from [@Burington; @Zwillinger; @Abramowitz; @Gradshteyn] then transformed into *rules* that include precise instructions as to when a formula should be applied.
 Numerous other previously unknown rules were derived during Rubi's development in order to integrate expressions not addressed by formulas in published tables. 
