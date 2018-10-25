@@ -39,7 +39,7 @@ In this work, we present Rubi, a rule-based integrator.
 Rubi systematically applies an extensive system of symbolic integration rules able to find the optimal antiderivative of a wide variety of mathematical expressions.
 It currently has over 6600 rules implemented in Mathematica's pattern-matching language.
 Some of these rules are based on integration *formulas* from [@Burington; @Zwillinger; @Abramowitz; @Gradshteyn] and then transformed into *rules* that include precise instructions as to when a formula should be applied.
-Numerous other previously unknown rules were derived during Rubi's development in order to integrate expressions not addressed by formulas in published tables. 
+Numerous other rules had to be derived during Rubi's development in order to integrate expressions not addressed by formulas in published tables. 
 
 The key to the success of Rubi is the rigorous definition of conditions for the integration steps that determine under which circumstances the application of a specific rule is correct and useful.
 Therefore, Rubi produces optimal antiderivatives that are often dramatically simpler than provided by the commercial CAS integrators.
