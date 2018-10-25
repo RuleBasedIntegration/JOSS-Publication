@@ -48,16 +48,19 @@ Rubi is implemented as a Mathematica package that gives the user the option to i
 steps and application conditions in detail. 
 An extensive test-suite of over 70,000 integrals with known, optimal antiderivatives is employed to
 thoroughly test the system before each new release.
-Since it is also useful for testing other symbolic integrators as well, the entire test-suite is available on [Rubi's website](https://rulebasedintegration.org/) expressed in Axiom, Maple, Mathematica, and Maxima syntax.
+Since it is also useful for testing other symbolic integrators, the entire test-suite is available on Rubi's website[@RubiOrg] expressed in Axiom, Maple, Mathematica, and Maxima syntax.
 Also on the website are PDF files showing how Rubi and Mathematica's built-in integrator perform on the test-suite.
 
 However, the value of Rubi goes far beyond its Mathematica implementation. All integration rules are
 available in human readable form as PDF files or Mathematica notebooks which contain additional details
 and references to the relevant literature. Since Rubi's rules in general only require a system for
 manipulating symbolic expressions by applying pattern-based rules, it is feasible to implement the
-integration rules in other systems. Therefore, Rubi is the integration engine behind Symja ,
-an open-source Java system for symbolic math. Furthermore, there are efforts to include Rubi into SymPy,
-a Python library for symbolic mathematics, which would directly open the way to use it in Sage,
+integration rules in other systems.
+
+That this is indeed possible was shown in the case of Symja[@Symja],
+an open-source Java system for symbolic math, where we assisted in the translation of Rubi's integration rules into the system. Now, Rubi is used as the integration engine in Symja.
+Furthermore, there are efforts to include Rubi into SymPy[@SymPy],
+a Python library for symbolic mathematics, which would directly open the way to use it in Sage[@Sage],
 a free and open-source CAS.
 
 Ultimately, the rationale behind Rubi is to make rule-based integration publicly available to enable researchers and
@@ -75,11 +78,11 @@ $$\int \frac{\sec(x)^2+\sec(x)^2\cdot\tan(x)}{(2-\tan(x))\cdot\sqrt{1+\tan(x)^3}
 using Rubi when all integration steps are displayed.
 The specific rules that are applied are shown in red and it is possible to open the rule display to inspect the exact conditions that need to hold to make the transformation valid.
 In blue, the intermediate expressions are visible and at the end the final antiderivative is returned.
-It should be noted that the size of the found antiderivative is 25, counting the leafs of the expression tree.
+It should be noted that the size of the found antiderivative is 25, counting the leafs in the expression tree of the result.
 In comparison, Mathematica 11.3 returns an antiderivative that has a leaf count of 290 and contains complex terms.
 
 # Acknowledgements
 
-We to thank David Jeffrey, Daniel Lichtblau, David Stoutemyer, Martin Welz for contributions and fruitful discussion
+We to thank David Jeffrey, Daniel Lichtblau, David Stoutemyer, and Martin Welz for contributions and fruitful discussions.
 
 # References
