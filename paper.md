@@ -31,13 +31,14 @@ bibliography: paper.bib
 
 Finding the antiderivative of expressions is challenging and requires advanced mathematical skills
 and knowledge even for unsuspicious looking problems. Nowadays, computer algebra systems (CAS)
-like Mathematica [XXX], Maple [XXX], Maxima [XXX], and others [XXX], provide algorithms
-to compute antiderivatives symbolically, but it often is impossible to gain insight into how a
-solution was found or why an antiderivative could not be computed.
+like Mathematica (Wolfram Research, Inc., Champaign, IL), Maple (Maplesoft, a division of Waterloo Maple Inc., Waterloo, Ontario), Maxima (maxima.sourceforge.net), and others, provide algorithms
+to compute antiderivatives symbolically.
+However, often it is impossible to gain insight into how a solution was found or why an antiderivative could not be computed.
 
 In this work, we present Rubi, an extensive system of symbolic integration rules that can be
 systematically applied to determine the antiderivative of a wide variety of mathematical expressions.
-Rubi contains currently over 6600 integration rules derived from known integration tables [XXX]
+Rubi contains currently over 6600 integration rules derived from known
+integration tables [@Burington; @Willian; @Abramowitz; @Gradshteyn]
 and incorporated into Mathematica's powerful pattern-matching language. The key to the success of Rubi
 is the rigorous definition of conditions for the integration steps that determine under which circumstances
 the application of a specific rule is correct and meaningful.
@@ -53,11 +54,14 @@ However, the value of Rubi goes far beyond its Mathematica implementation. All i
 available in human readable form as PDF file or Mathematica notebook which contain additional details
 and references to the relevant literature. Since Rubi's rules in general only require a system for
 manipulating symbolic expressions by applying pattern-based rules, it is feasible to implement the
-integration rules in other systems. Therefore, Rubi is the integration engine behind Symja,
+integration rules in other systems. Therefore, Rubi is the integration engine behind Symja ,
 an open-source Java system for symbolic math. Furthermore, there are efforts to include Rubi into SymPy,
 a Python library for symbolic mathematics, which would directly open the way to use it in Sage,
 a free and open-source CAS.
 
+Ultimately, the rationale behind Rubi is to make rule-based integration publicly available to enable researchers and
+enthusiast to find optimal antiderivatives and to verify the correctnes of each integration step
+in the context of their problems.
 
 # Short Example
 
