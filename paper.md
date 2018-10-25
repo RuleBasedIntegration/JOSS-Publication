@@ -44,11 +44,12 @@ Numerous other previously unknown rules were derived during Rubi's development i
 The key to the success of Rubi is the rigorous definition of conditions for the integration steps that determine under which circumstances the application of a specific rule is correct and useful.
 Therefore, Rubi produces optimal antiderivatives that are often dramatically simpler than provided by the commercial CAS integrators.
 
-Rubi is implemented as a Mathematica package that gives the user the possibility to inspect integration
-steps and conditions in detail. 
-An extensive test suite of over 70,000 integrals with known, optimal antiderivatives is employed to
-verify its correctness. To compare the results of Rubi with other integrators, the test suite is
-available for Axiom, Maple, Mathematica, and Maxima.
+Rubi is implemented as a Mathematica package that gives the user the option to inspect integration
+steps and application conditions in detail. 
+An extensive test-suite of over 70,000 integrals with known, optimal antiderivatives is employed to
+thoroughly test the system before each new release.
+Since it is also useful for testing other symbolic integrators as well, the entire test-suite is available on [Rubi's website](https://rulebasedintegration.org/) expressed in Axiom, Maple, Mathematica, and Maxima syntax.
+Also on the website are PDF files showing how Rubi and Mathematica's built-in integrator perform on the test-suite.
 
 However, the value of Rubi goes far beyond its Mathematica implementation. All integration rules are
 available in human readable form as PDF files or Mathematica notebooks which contain additional details
