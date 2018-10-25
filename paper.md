@@ -1,59 +1,61 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'Rule-based integration: An extensive system of symbolic integration rules'
 tags:
-  - Python
-  - astronomy
+  - Mathematics
+  - Integration
   - dynamics
   - galactic dynamics
   - milky way
 authors:
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0003-0872-7098
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author 2
-    orcid: 0000-0000-0000-0000
+  - name: Albert Rich
+    orcid: ?????????
+    affiliation: 1
+  - name: Patrick Scheibe
+    orcid: 0000-0003-0361-9063
     affiliation: 2
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University
+ - name: Unaffiliated, co-author of the Derive computer algebra system
    index: 1
- - name: Institution 2
+ - name: Leipzig University, Saxonian Incubator for Clinical Translation, Philipp-Rosenthal-Straße 55, 04103 Leipzig
    index: 2
-date: 13 August 2017
+date: 30 October 2018
 bibliography: paper.bib
 ---
 
 # Summary
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
+Finding the antiderivative of expressions is challenging and requires advanced mathematical skills
+and knowledge even for unsuspicious looking problems. Nowadays, computer algebra systems (CAS)
+like Mathematica [XXX], Maple [XXX], Maxima [XXX], and others [XXX], provide algorithms
+to compute antiderivatives symbolically, but it often is impossible to gain insight into how a
+solution was found or why an antiderivative could not be computed.
 
-``Gala`` is an Astropy-affiliated Python package for galactic dynamics. Python
-enables wrapping low-level languages (e.g., C) for speed without losing
-flexibility or ease-of-use in the user-interface. The API for ``Gala`` was
-designed to provide a class-based and user-friendly interface to fast (C or
-Cython-optimized) implementations of common operations such as gravitational
-potential and force evaluation, orbit integration, dynamical transformations,
-and chaos indicators for nonlinear dynamics. ``Gala`` also relies heavily on and
-interfaces well with the implementations of physical units and astronomical
-coordinate systems in the ``Astropy`` package [@astropy] (``astropy.units`` and
-``astropy.coordinates``).
+In this work, we present Rubi, an extensive system of symbolic integration rules that can be
+systematically applied to determine the antiderivative of a wide variety of mathematical expressions.
+Rubi contains currently over 6600 integration rules derived from known integration tables [XXX]
+and incorporated into Mathematica's powerful pattern-matching language. The key to the success of Rubi
+is the rigorous definition of conditions for the integration steps that determine under which circumstances
+the application of a specific rule is correct and meaningful.
+Therefore, Rubi produces optimal antiderivatives often dramatically simpler than provided by the commercial CAS integrators.
 
-``Gala`` was designed to be used by both astronomical researchers and by
-students in courses on gravitational dynamics or astronomy. It has already been
-used in a number of scientific publications [@Pearson:2017] and has also been
-used in graduate courses on Galactic dynamics to, e.g., provide interactive
-visualizations of textbook material [@Binney:2008]. The combination of speed,
-design, and support for Astropy functionality in ``Gala`` will enable exciting
-scientific explorations of forthcoming data releases from the *Gaia* mission
-[@gaia] by students and experts alike. The source code for ``Gala`` has been
-archived to Zenodo with the linked DOI: [@zenodo]
+Rubi is implemented as a Mathematica package that gives the user the possibility to inspect integration
+steps and conditions in detail. 
+An extensive test suite of over 70.000 integrals with known, optimal antiderivatives is employed to
+verify its correctness. To compare the results of Rubi with other integrators, the test suite is
+available for Axiom, Maple, Mathematica, and Maxima.
+
+However, the value of Rubi goes far beyond its Mathematica implementation. All integration rules are
+available in human readable form as PDF file or Mathematica notebook which contain additional details
+and references to the relevant literature. Since Rubi's rules in general only require a system for
+manipulating symbolic expressions by applying pattern-based rules, it is feasible to implement the
+integration rules in other systems. Therefore, Rubi is the integration engine behind Symja,
+an open-source Java system for symbolic math. Furthermore, there are efforts to include Rubi into SymPy,
+a Python library for symbolic mathematics, which would directly open the way to use it in Sage,
+a free and open-source CAS.
+
+
+# Short Example
+
 
 # Mathematics
 
