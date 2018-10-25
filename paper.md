@@ -38,7 +38,7 @@ However, often it is impossible to gain insight into how a solution was found or
 In this work, we present Rubi, an extensive system of symbolic integration rules that can be
 systematically applied to determine the antiderivative of a wide variety of mathematical expressions.
 Rubi contains currently over 6600 integration rules derived from known
-integration tables [@Burington; @Willian; @Abramowitz; @Gradshteyn]
+integration tables [@Burington; @Zwillinger; @Abramowitz; @Gradshteyn]
 and incorporated into Mathematica's powerful pattern-matching language. The key to the success of Rubi
 is the rigorous definition of conditions for the integration steps that determine under which circumstances
 the application of a specific rule is correct and meaningful.
