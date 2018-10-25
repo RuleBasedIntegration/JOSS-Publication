@@ -65,40 +65,16 @@ a free and open-source CAS.
 
 Figure 1 shows the computation of
 
-$$\int \frac{\sec(x)^2+sec(x)^2\cdot\tan(x)}{(2-\tan(x))\cdot\sqrt{1+\tan(x)^3}} dx$$
+$$\int \frac{\sec(x)^2+\sec(x)^2\cdot\tan(x)}{(2-\tan(x))\cdot\sqrt{1+\tan(x)^3}} \; dx$$
 
-using Rubi with all integration steps displayed.
-The specific rule that is applied is shown in red and it is possible to open the rule display to inspect the exact conditions that need to hold to make the transformation valid.
+using Rubi when all integration steps are displayed.
+The specific rules that are applied are shown in red and it is possible to open the rule display to inspect the exact conditions that need to hold to make the transformation valid.
 In blue, the intermediate expressions are visible and at the end the final antiderivative is returned.
 It should be noted that the size of the found antiderivative is 25, counting the leafs of the expression tree.
 In comparison, Mathematica 11.3 returns an antiderivative that has a leaf count of 290 and contains complex terms.
 
-
-# Mathematics
-
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
-
-Double dollars make self-standing equations:
-
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-
-# Citations
-
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-# Figures
-
-Figures can be included like this: ![Example figure.](figure.png)
-
 # Acknowledgements
 
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
+We to thank David Jeffrey, Daniel Lichtblau, David Stoutemyer, Martin Welz for contributions and fruitful discussion
 
 # References
