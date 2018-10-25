@@ -58,7 +58,7 @@ manipulating symbolic expressions by applying pattern-based rules, it is feasibl
 integration rules in other systems.
 
 That this is indeed possible was shown in the case of Symja[@Symja],
-an open-source Java system for symbolic math, where we assisted in the translation of Rubi's integration rules into the system. Now, Rubi is used as the integration engine in Symja.
+an open-source Java system for symbolic math, where we assisted in the translation and testing of Rubi's integration rules. Now, Rubi is used as the main integration engine in Symja.
 Furthermore, there are efforts to include Rubi into SymPy[@SymPy],
 a Python library for symbolic mathematics, which would directly open the way to use it in Sage[@Sage],
 a free and open-source CAS.
