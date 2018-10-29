@@ -33,9 +33,9 @@ bibliography: paper.bib
 
 Finding the antiderivative of expressions is often challenging and requires advanced mathematical skills
 even for simple looking problems.
-Computer algebra systems (CAS) like Mathematica (Wolfram Research, Inc., Champaign, IL), Maple (Maplesoft, a division of Waterloo Maple Inc., Waterloo, Ontario), and Maxima (maxima.sourceforge.net) provide integators to compute antiderivatives symbolically.
+Computer algebra systems (CAS) like Mathematica (Wolfram Research, Inc., Champaign, IL), Maple (Maplesoft, a division of Waterloo Maple Inc., Waterloo, Ontario), and Maxima (maxima.sourceforge.net) provide integrators to compute antiderivatives symbolically.
 However, these systems give no insight as to how an antiderivative is found or why it could not be computed.
-Also they use advanced methods incomprehensible to humans that often result in huge antiderivatives unnecessarily involving special, or even hypergeometric, functions.
+Also, they use advanced methods incomprehensible to humans that often result in huge antiderivatives unnecessarily involving special, or even hypergeometric, functions.
 
 In this work, we present Rubi[@RubiOrg], a rule-based integrator and its implementation in Mathematica[@RubiMma].
 Rubi systematically applies an extensive system of symbolic integration rules able to find the optimal antiderivative of a wide variety of mathematical expressions.
@@ -52,7 +52,7 @@ An extensive test-suite of over 70,000 integrals with known, optimal antiderivat
 thoroughly test the system before each new release[@RubiMmaTestSuite].
 Since it is also useful for testing other symbolic integrators, the entire test-suite is available on Rubi's website[@RubiOrg] expressed in Axiom, Maple, Mathematica, and Maxima syntax.
 Also on the website are PDF files showing how Rubi and Mathematica's built-in integrator perform on the test-suite.
-All information about Rubi, i.e. integration rules, source-code and test-files, are publicly available on its GitHub organization page[@RubiOrgGithub].
+All information about Rubi, i.e. integration rules, source-code, and test-files, are publicly available on its GitHub organization page[@RubiOrgGithub].
 
 However, the value of Rubi goes far beyond its Mathematica implementation. All integration rules are
 available in human readable form as PDF files or Mathematica notebooks which contain additional details
@@ -67,7 +67,7 @@ a Python library for symbolic mathematics, which would directly open the way to 
 a free and open-source CAS.
 
 Ultimately, the rationale behind Rubi is to make rule-based integration publicly available to enable researchers and
-enthusiast to find optimal antiderivatives and to verify the correctnes of each integration step
+enthusiast to find optimal antiderivatives and to verify the correctness of each integration step
 in the context of their problems.
 
 # Short Example
