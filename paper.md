@@ -1,27 +1,29 @@
 ---
 title: 'Rule-based integration: An extensive system of symbolic integration rules'
 tags:
-  - Mathematics
-  - Integration
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - computer algebra system
+  - calculus
+  - integration
+  - antiderivative
+  - pattern matching
+  - rewriting systems
+  - reduction systems
 authors:
   - name: Albert Rich
-    orcid: ?????????
+    orcid: 0000-0002-0792-2775
     affiliation: 1
   - name: Patrick Scheibe
     orcid: 0000-0003-0361-9063
     affiliation: 2
   - name: Nasser M Abbasi
-    orcid: ?????????????
+    orcid: 0000-0003-1333-1549
     affiliation: 3
 affiliations:
- - name: Unaffiliated, co-author of the Derive computer algebra system
+ - name: Independent researcher, co-author of the Derive computer algebra system
    index: 1
  - name: Leipzig University, Saxonian Incubator for Clinical Translation, Philipp-Rosenthal-Straße 55, 04103 Leipzig
    index: 2
- - name: ????????????????
+ - name: UW-Madison, Madison, WI 53706, USA
    index: 3
 date: 30 October 2018
 bibliography: paper.bib
