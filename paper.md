@@ -34,7 +34,7 @@ bibliography: paper.bib
 Finding the antiderivative of expressions is often challenging and requires advanced mathematical skills
 even for simple looking problems.
 Computer algebra systems (CAS) like Mathematica (Wolfram Research, Inc., Champaign, IL), Maple (Maplesoft, a division of Waterloo Maple Inc., Waterloo, Ontario), and Maxima (maxima.sourceforge.net) provide integators to compute antiderivatives symbolically.
-However, these systems supply no insight as to how an antiderivative is found or why it could not be computed.
+However, these systems give no insight as to how an antiderivative is found or why it could not be computed.
 Also they use advanced methods incomprehensible to humans that often result in huge antiderivatives unnecessarily involving special, or even hypergeometric, functions.
 
 In this work, we present Rubi[@RubiOrg], a rule-based integrator and its implementation in Mathematica[@RubiMma].
