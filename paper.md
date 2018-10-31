@@ -82,7 +82,7 @@ using Rubi when all integration steps are displayed.
 The specific rules that are applied are shown in red and it is possible to open the rule display to inspect the exact conditions that need to hold to make the transformation valid.
 In blue, the intermediate expressions are visible and at the end the final antiderivative is returned.
 It should be noted that the size of the found antiderivative is 25, counting the leafs in the expression tree of the result.
-In comparison, Mathematica' current version 11.3 returns an antiderivative that has a leaf count of 290 and contains complex terms.
+In comparison, Mathematica's current version 11.3 returns an antiderivative that has a leaf count of 290 and contains complex terms.
 
 # Acknowledgements
 
