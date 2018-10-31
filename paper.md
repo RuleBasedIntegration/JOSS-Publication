@@ -72,7 +72,7 @@ in the context of their problems.
 
 # Short Example
 
-![Figure 1](figure1.png)
+![Example of computing the antiderivative of an expression, showing intermediate results and applied rules.](figure1.png)
 
 Figure 1 shows the computation of
 
