@@ -27,6 +27,7 @@ affiliations:
    index: 3
 date: 30 October 2018
 bibliography: paper.bib
+csl: transactions-on-mathematical-software.csl
 ---
 
 # Summary
@@ -41,13 +42,13 @@ In this work, we present Rubi[@RubiOrg], a rule-based integrator and its impleme
 Rubi systematically applies an extensive system of symbolic integration rules able to find the optimal antiderivative of a wide variety of mathematical expressions.
 It currently has over 6600 rules implemented in Mathematica's pattern-matching language.
 Some of these rules are based on integration *formulas* from [@Burington; @Zwillinger; @Abramowitz; @Gradshteyn] and they are transformed into *rules* that include precise instructions as to when a formula should be applied.
-Numerous other rules had to be derived during Rubi's development in order to integrate expressions not addressed by formulas in published tables. 
+Numerous other rules had to be derived during Rubi's development in order to integrate expressions not addressed by formulas in published tables.
 
 The key to the success of Rubi is the rigorous definition of conditions for the integration steps that determine under which circumstances the application of a specific rule is correct and useful.
 Therefore, Rubi produces optimal antiderivatives that are often dramatically simpler than provided by the commercial CAS integrators.
 
 Rubi is implemented as a Mathematica package that gives the user the option to inspect integration
-steps and application conditions in detail. 
+steps and application conditions in detail.
 An extensive test-suite of over 70,000 integrals with known, optimal antiderivatives is employed to
 thoroughly test the system before each new release[@RubiMmaTestSuite].
 Since it is also useful for testing other symbolic integrators, the entire test-suite is available on Rubi's website[@RubiOrg] expressed in Axiom, Maple, Mathematica, and Maxima syntax.
@@ -72,7 +73,7 @@ in the context of their problems.
 
 # Short Example
 
-![Example of computing the antiderivative of an expression, showing intermediate results and applied rules.](figure1.png)
+![Example of computing the antiderivative of an expression, showing intermediate results and applied rules.](figure1.pdf){width=75%}
 
 Figure 1 shows the computation of
 
